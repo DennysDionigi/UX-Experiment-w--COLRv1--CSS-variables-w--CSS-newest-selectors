@@ -1,0 +1,422 @@
+@-webkit-keyframes flash_me {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  to {
+    opacity: 0.99;
+  }
+
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes flash_me {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  to {
+    opacity: 0.99;
+  }
+
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+  }
+}
+
+*,
+* * {
+  margin: 0;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  text-transform: none;
+  outline: 0;
+  touch-action: none;
+}
+
+:root {
+  --bg-white: hwb(0deg 100% 0% / 100%);
+  --font-white: var(--bg-white);
+  --bg-heading-green: hwb(130deg 0% 40%);
+  --base-grey: hwb(210deg 93% 4%);
+  --base-grey-darker: hwb(220deg 53% 46%);
+  --blur: blur(50px);
+  --shadow: 0 10px 10px 4px rgb(0 0 0 / 8%);
+  --bg-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='margin:auto;background:%23f1f2f3;display:block;z-index:1;position:relative;width: 100%25;height: 100%25;' preserveAspectRatio='xMidYMid' viewBox='0 0 1680 772'%3E%3Cg transform='translate(840,386) scale(1,1) translate(-840,-386)'%3E%3Cdefs%3E%3ClinearGradient id='lg-0.29378059999756956' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop stop-color='%231d3f72' offset='0.3'%3E%3C/stop%3E%3Cstop stop-color='%235699d2' offset='0.6499999999999999'%3E%3C/stop%3E%3Cstop stop-color='%235699d2' offset='1'%3E%3C/stop%3E%3C/linearGradient%3E%3ClinearGradient id='fg-lg-0.29378059999756956' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop stop-color='%231d3f72' stop-opacity='1' offset='0.3'%3E%3C/stop%3E%3Cstop stop-color='%235699d2' stop-opacity='0.66' offset='0.6499999999999999'%3E%3C/stop%3E%3Cstop stop-color='%235699d2' stop-opacity='0' offset='1'%3E%3C/stop%3E%3C/linearGradient%3E%3Cstyle type='text/css'%3E path %7B fill: none; stroke: %23d8ebf9; stroke-width: 2px %7D%0A%3C/style%3E%3C/defs%3E%3Crect x='0' y='0' width='1680' height='772' fill='url(%23lg-0.29378059999756956)'%3E%3C/rect%3E%3Cpath d='M0 231.6 L-11760 772'%3E%3C/path%3E%3Cpath d='M12.923076923076923 231.6 L-11566.153846153846 772'%3E%3C/path%3E%3Cpath d='M25.846153846153847 231.6 L-11372.307692307691 772'%3E%3C/path%3E%3Cpath d='M38.76923076923077 231.6 L-11178.461538461539 772'%3E%3C/path%3E%3Cpath d='M51.69230769230769 231.6 L-10984.615384615385 772'%3E%3C/path%3E%3Cpath d='M64.61538461538461 231.6 L-10790.76923076923 772'%3E%3C/path%3E%3Cpath d='M77.53846153846153 231.6 L-10596.923076923076 772'%3E%3C/path%3E%3Cpath d='M90.46153846153847 231.6 L-10403.076923076924 772'%3E%3C/path%3E%3Cpath d='M103.38461538461539 231.6 L-10209.23076923077 772'%3E%3C/path%3E%3Cpath d='M116.3076923076923 231.6 L-10015.384615384615 772'%3E%3C/path%3E%3Cpath d='M129.23076923076923 231.6 L-9821.538461538461 772'%3E%3C/path%3E%3Cpath d='M142.15384615384616 231.6 L-9627.692307692309 772'%3E%3C/path%3E%3Cpath d='M155.07692307692307 231.6 L-9433.846153846154 772'%3E%3C/path%3E%3Cpath d='M168 231.6 L-9240 772'%3E%3C/path%3E%3Cpath d='M180.92307692307693 231.6 L-9046.153846153846 772'%3E%3C/path%3E%3Cpath d='M193.84615384615384 231.6 L-8852.307692307691 772'%3E%3C/path%3E%3Cpath d='M206.76923076923077 231.6 L-8658.461538461539 772'%3E%3C/path%3E%3Cpath d='M219.69230769230768 231.6 L-8464.615384615385 772'%3E%3C/path%3E%3Cpath d='M232.6153846153846 231.6 L-8270.76923076923 772'%3E%3C/path%3E%3Cpath d='M245.53846153846155 231.6 L-8076.923076923077 772'%3E%3C/path%3E%3Cpath d='M258.46153846153845 231.6 L-7883.076923076923 772'%3E%3C/path%3E%3Cpath d='M271.38461538461536 231.6 L-7689.2307692307695 772'%3E%3C/path%3E%3Cpath d='M284.3076923076923 231.6 L-7495.384615384615 772'%3E%3C/path%3E%3Cpath d='M297.2307692307692 231.6 L-7301.538461538462 772'%3E%3C/path%3E%3Cpath d='M310.15384615384613 231.6 L-7107.692307692308 772'%3E%3C/path%3E%3Cpath d='M323.0769230769231 231.6 L-6913.846153846154 772'%3E%3C/path%3E%3Cpath d='M336 231.6 L-6720 772'%3E%3C/path%3E%3Cpath d='M348.9230769230769 231.6 L-6526.153846153846 772'%3E%3C/path%3E%3Cpath d='M361.84615384615387 231.6 L-6332.307692307692 772'%3E%3C/path%3E%3Cpath d='M374.7692307692308 231.6 L-6138.461538461538 772'%3E%3C/path%3E%3Cpath d='M387.6923076923077 231.6 L-5944.615384615385 772'%3E%3C/path%3E%3Cpath d='M400.61538461538464 231.6 L-5750.7692307692305 772'%3E%3C/path%3E%3Cpath d='M413.53846153846155 231.6 L-5556.923076923077 772'%3E%3C/path%3E%3Cpath d='M426.46153846153845 231.6 L-5363.076923076923 772'%3E%3C/path%3E%3Cpath d='M439.38461538461536 231.6 L-5169.2307692307695 772'%3E%3C/path%3E%3Cpath d='M452.3076923076923 231.6 L-4975.384615384615 772'%3E%3C/path%3E%3Cpath d='M465.2307692307692 231.6 L-4781.538461538462 772'%3E%3C/path%3E%3Cpath d='M478.15384615384613 231.6 L-4587.692307692308 772'%3E%3C/path%3E%3Cpath d='M491.0769230769231 231.6 L-4393.846153846154 772'%3E%3C/path%3E%3Cpath d='M504 231.6 L-4200 772'%3E%3C/path%3E%3Cpath d='M516.9230769230769 231.6 L-4006.1538461538457 772'%3E%3C/path%3E%3Cpath d='M529.8461538461538 231.6 L-3812.3076923076924 772'%3E%3C/path%3E%3Cpath d='M542.7692307692307 231.6 L-3618.461538461538 772'%3E%3C/path%3E%3Cpath d='M555.6923076923077 231.6 L-3424.6153846153848 772'%3E%3C/path%3E%3Cpath d='M568.6153846153846 231.6 L-3230.7692307692305 772'%3E%3C/path%3E%3Cpath d='M581.5384615384615 231.6 L-3036.923076923076 772'%3E%3C/path%3E%3Cpath d='M594.4615384615385 231.6 L-2843.076923076924 772'%3E%3C/path%3E%3Cpath d='M607.3846153846154 231.6 L-2649.2307692307695 772'%3E%3C/path%3E%3Cpath d='M620.3076923076923 231.6 L-2455.3846153846152 772'%3E%3C/path%3E%3Cpath d='M633.2307692307693 231.6 L-2261.538461538461 772'%3E%3C/path%3E%3Cpath d='M646.1538461538462 231.6 L-2067.6923076923085 772'%3E%3C/path%3E%3Cpath d='M659.0769230769231 231.6 L-1873.8461538461543 772'%3E%3C/path%3E%3Cpath d='M672 231.6 L-1680 772'%3E%3C/path%3E%3Cpath d='M684.9230769230769 231.6 L-1486.1538461538457 772'%3E%3C/path%3E%3Cpath d='M697.8461538461538 231.6 L-1292.3076923076915 772'%3E%3C/path%3E%3Cpath d='M710.7692307692307 231.6 L-1098.461538461539 772'%3E%3C/path%3E%3Cpath d='M723.6923076923077 231.6 L-904.6153846153848 772'%3E%3C/path%3E%3Cpath d='M736.6153846153846 231.6 L-710.7692307692305 772'%3E%3C/path%3E%3Cpath d='M749.5384615384615 231.6 L-516.9230769230762 772'%3E%3C/path%3E%3Cpath d='M762.4615384615385 231.6 L-323.0769230769238 772'%3E%3C/path%3E%3Cpath d='M775.3846153846154 231.6 L-129.2307692307695 772'%3E%3C/path%3E%3Cpath d='M788.3076923076923 231.6 L64.61538461538476 772'%3E%3C/path%3E%3Cpath d='M801.2307692307693 231.6 L258.461538461539 772'%3E%3C/path%3E%3Cpath d='M814.1538461538462 231.6 L452.30769230769147 772'%3E%3C/path%3E%3Cpath d='M827.0769230769231 231.6 L646.1538461538457 772'%3E%3C/path%3E%3Cpath d='M840 231.6 L840 772'%3E%3C/path%3E%3Cpath d='M852.9230769230769 231.6 L1033.8461538461543 772'%3E%3C/path%3E%3Cpath d='M865.8461538461538 231.6 L1227.6923076923085 772'%3E%3C/path%3E%3Cpath d='M878.7692307692307 231.6 L1421.538461538461 772'%3E%3C/path%3E%3Cpath d='M891.6923076923077 231.6 L1615.3846153846152 772'%3E%3C/path%3E%3Cpath d='M904.6153846153846 231.6 L1809.2307692307695 772'%3E%3C/path%3E%3Cpath d='M917.5384615384615 231.6 L2003.0769230769238 772'%3E%3C/path%3E%3Cpath d='M930.4615384615385 231.6 L2196.923076923076 772'%3E%3C/path%3E%3Cpath d='M943.3846153846154 231.6 L2390.7692307692305 772'%3E%3C/path%3E%3Cpath d='M956.3076923076923 231.6 L2584.6153846153848 772'%3E%3C/path%3E%3Cpath d='M969.2307692307693 231.6 L2778.461538461539 772'%3E%3C/path%3E%3Cpath d='M982.1538461538462 231.6 L2972.3076923076915 772'%3E%3C/path%3E%3Cpath d='M995.0769230769231 231.6 L3166.1538461538457 772'%3E%3C/path%3E%3Cpath d='M1008 231.6 L3360 772'%3E%3C/path%3E%3Cpath d='M1020.9230769230769 231.6 L3553.8461538461543 772'%3E%3C/path%3E%3Cpath d='M1033.8461538461538 231.6 L3747.6923076923085 772'%3E%3C/path%3E%3Cpath d='M1046.7692307692307 231.6 L3941.538461538461 772'%3E%3C/path%3E%3Cpath d='M1059.6923076923076 231.6 L4135.384615384615 772'%3E%3C/path%3E%3Cpath d='M1072.6153846153845 231.6 L4329.2307692307695 772'%3E%3C/path%3E%3Cpath d='M1085.5384615384614 231.6 L4523.076923076924 772'%3E%3C/path%3E%3Cpath d='M1098.4615384615386 231.6 L4716.923076923078 772'%3E%3C/path%3E%3Cpath d='M1111.3846153846155 231.6 L4910.7692307692305 772'%3E%3C/path%3E%3Cpath d='M1124.3076923076924 231.6 L5104.615384615383 772'%3E%3C/path%3E%3Cpath d='M1137.2307692307693 231.6 L5298.461538461539 772'%3E%3C/path%3E%3Cpath d='M1150.1538461538462 231.6 L5492.3076923076915 772'%3E%3C/path%3E%3Cpath d='M1163.076923076923 231.6 L5686.153846153848 772'%3E%3C/path%3E%3Cpath d='M1176 231.6 L5880 772'%3E%3C/path%3E%3Cpath d='M1188.923076923077 231.6 L6073.846153846152 772'%3E%3C/path%3E%3Cpath d='M1201.8461538461538 231.6 L6267.6923076923085 772'%3E%3C/path%3E%3Cpath d='M1214.7692307692307 231.6 L6461.538461538461 772'%3E%3C/path%3E%3Cpath d='M1227.6923076923076 231.6 L6655.384615384617 772'%3E%3C/path%3E%3Cpath d='M1240.6153846153845 231.6 L6849.2307692307695 772'%3E%3C/path%3E%3Cpath d='M1253.5384615384614 231.6 L7043.076923076922 772'%3E%3C/path%3E%3Cpath d='M1266.4615384615386 231.6 L7236.923076923078 772'%3E%3C/path%3E%3Cpath d='M1279.3846153846155 231.6 L7430.7692307692305 772'%3E%3C/path%3E%3Cpath d='M1292.3076923076924 231.6 L7624.615384615383 772'%3E%3C/path%3E%3Cpath d='M1305.2307692307693 231.6 L7818.461538461539 772'%3E%3C/path%3E%3Cpath d='M1318.1538461538462 231.6 L8012.3076923076915 772'%3E%3C/path%3E%3Cpath d='M1331.076923076923 231.6 L8206.153846153848 772'%3E%3C/path%3E%3Cpath d='M1344 231.6 L8400 772'%3E%3C/path%3E%3Cpath d='M1356.923076923077 231.6 L8593.846153846152 772'%3E%3C/path%3E%3Cpath d='M1369.8461538461538 231.6 L8787.692307692309 772'%3E%3C/path%3E%3Cpath d='M1382.7692307692307 231.6 L8981.538461538461 772'%3E%3C/path%3E%3Cpath d='M1395.6923076923076 231.6 L9175.384615384617 772'%3E%3C/path%3E%3Cpath d='M1408.6153846153845 231.6 L9369.23076923077 772'%3E%3C/path%3E%3Cpath d='M1421.5384615384614 231.6 L9563.076923076922 772'%3E%3C/path%3E%3Cpath d='M1434.4615384615386 231.6 L9756.923076923078 772'%3E%3C/path%3E%3Cpath d='M1447.3846153846155 231.6 L9950.76923076923 772'%3E%3C/path%3E%3Cpath d='M1460.3076923076924 231.6 L10144.615384615383 772'%3E%3C/path%3E%3Cpath d='M1473.2307692307693 231.6 L10338.461538461539 772'%3E%3C/path%3E%3Cpath d='M1486.1538461538462 231.6 L10532.307692307691 772'%3E%3C/path%3E%3Cpath d='M1499.076923076923 231.6 L10726.153846153848 772'%3E%3C/path%3E%3Cpath d='M1512 231.6 L10920 772'%3E%3C/path%3E%3Cpath d='M1524.923076923077 231.6 L11113.846153846152 772'%3E%3C/path%3E%3Cpath d='M1537.8461538461538 231.6 L11307.692307692309 772'%3E%3C/path%3E%3Cpath d='M1550.7692307692307 231.6 L11501.538461538461 772'%3E%3C/path%3E%3Cpath d='M1563.6923076923076 231.6 L11695.384615384617 772'%3E%3C/path%3E%3Cpath d='M1576.6153846153845 231.6 L11889.23076923077 772'%3E%3C/path%3E%3Cpath d='M1589.5384615384614 231.6 L12083.076923076922 772'%3E%3C/path%3E%3Cpath d='M1602.4615384615386 231.6 L12276.923076923078 772'%3E%3C/path%3E%3Cpath d='M1615.3846153846155 231.6 L12470.76923076923 772'%3E%3C/path%3E%3Cpath d='M1628.3076923076924 231.6 L12664.615384615383 772'%3E%3C/path%3E%3Cpath d='M1641.2307692307693 231.6 L12858.461538461539 772'%3E%3C/path%3E%3Cpath d='M1654.1538461538462 231.6 L13052.307692307691 772'%3E%3C/path%3E%3Cpath d='M1667.076923076923 231.6 L13246.153846153848 772'%3E%3C/path%3E%3Cpath d='M1680 231.6 L13440 772'%3E%3C/path%3E%3Cg%3E%3Cpath d='M0 231.6 L1680 231.6'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 4.092970414201183' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 235.69297041420117 L1680 235.69297041420117'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 8.185940828402366' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 243.87891124260352 L1680 243.87891124260352'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 12.278911242603549' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 256.1578224852071 L1680 256.1578224852071'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 16.37188165680473' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 272.52970414201184 L1680 272.52970414201184'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 20.464852071005915' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 292.99455621301774 L1680 292.99455621301774'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 24.557822485207097' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 317.55237869822486 L1680 317.55237869822486'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 28.65079289940828' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 346.2031715976331 L1680 346.2031715976331'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 32.74376331360946' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 378.9469349112426 L1680 378.9469349112426'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 36.836733727810646' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 415.78366863905325 L1680 415.78366863905325'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 40.92970414201183' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 456.71337278106506 L1680 456.71337278106506'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 45.02267455621301' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 501.7360473372781 L1680 501.7360473372781'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 49.115644970414195' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 550.8516923076922 L1680 550.8516923076922'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 53.20861538461538' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 604.0603076923077 L1680 604.0603076923077'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 57.30158579881656' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 661.3618934911242 L1680 661.3618934911242'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 61.394556213017744' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 722.7564497041419 L1680 722.7564497041419'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 65.48752662721893' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Cg%3E%3Cpath d='M0 788.2439763313608 L1680 788.2439763313608'%3E%3C/path%3E%3CanimateTransform attributeName='transform' type='translate' repeatCount='indefinite' calcMode='linear' keyTimes='0;1' values='0 0;0 69.5804970414201' begin='0s' dur='0.8333333333333334s'%3E%3C/animateTransform%3E%3C/g%3E%3Crect x='0' y='0' width='1680' height='772' fill='url(%23fg-lg-0.29378059999756956)'%3E%3C/rect%3E%3C/g%3E%3C/svg%3E");
+  --font-size-11px: 11px;
+  --font-size-bit-bigger: calc(var(--font-size-11px) * 1.15);
+  font-family: sans-serif;
+  transition: 0.3s box-shadow ease-in-out;
+}
+
+:root:has(#cta_whatsapp:checked) {
+  box-shadow: inset 0 0 200vmax calc(200vmax * 100) hwb(0deg 0% 100%/78%);
+}
+
+:root:has(#cta_whatsapp:checked) .headings {
+  opacity: 0.6;
+}
+
+:root:has(#cta_whatsapp:checked) ._font_color_v1 {
+  transform: scale(0.5) translate(-60%, 60vw) rotateZ(90deg);
+}
+
+:root:has(#cta_whatsapp:checked) ._font_color_v2 {
+  transform: scale(10) translatey(50px);
+}
+
+:is(:root:hover) :is(.flash-slow, .flash-fast) {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+:is(.flash-slow, .flash-fast) {
+  -webkit-animation: flash_me linear infinite;
+          animation: flash_me linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.flash-slow {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.flash-fast {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+body {
+  background: var(--bg-svg) center/cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  min-height: calc(100% - -1px);
+  height: -webkit-fill-available;
+  overflow-y: auto;
+  scrollbar-gutter: stable both-edges;
+  scrollbar-width: thin;
+}
+
+mainl,
+label:after {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  overflow: hidden;
+}
+
+#cta_whatsapp {
+  display: none;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+#cta_whatsapp + label {
+  display: flex;
+  transition: transform 0.3s ease;
+  will-change: transform;
+  border: 1px solid #999;
+  background: #eee;
+  border-radius: 50%;
+  position: fixed;
+  top: 85%;
+  right: 5%;
+  z-index: 1;
+}
+
+#cta_whatsapp + label:active {
+  transform: scale(0.8);
+}
+
+label:after {
+  content: "✕";
+  font-size: calc(var(--font-size-bit-bigger) * 1.5);
+  position: absolute;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  background: var(--bg-heading-green);
+  border-radius: 50%;
+  border: 1px #000 solid;
+  box-shadow: 0 0 10px #000;
+  color: var(--font-white);
+  opacity: 0;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+#cta_whatsapp ~ .wrapper {
+  display: grid;
+  justify-items: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#cta_whatsapp:checked ~ .wrapper_1 {
+  opacity: 1;
+}
+
+#cta_whatsapp:checked ~ .wrapper_1 .contenitore {
+  opacity: 1;
+  visibility: visible;
+  transform: translatey(0);
+}
+
+#cta_whatsapp:checked ~ .wrapper_1 .contenitore .user_1 {
+  transition-delay: 0.25s, 0.25s, 0s;
+  transition-property: opacity, transform, background;
+}
+
+#cta_whatsapp:checked ~ .wrapper_1 .contenitore .user_2 {
+  transition-delay: 0.6s, 0.5s, 0s;
+  transition-property: opacity, transform, background;
+}
+
+#cta_whatsapp:checked ~ .wrapper_1 .contenitore .user_3 {
+  transition-delay: 0.85s, 0.75s, 0s;
+  transition-property: opacity, transform, background;
+}
+
+#cta_whatsapp:checked ~ .wrapper_1 .contenitore :is(.user_1, .user_2, .user_3) {
+  opacity: 1;
+  transform: translatey(0);
+}
+
+#cta_whatsapp:checked + label {
+  background: #fff;
+  border-bottom: 1px solid transparent;
+  filter: var(--shadow);
+  -webkit-filter: var(--shadow);
+}
+
+#cta_whatsapp:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.contenitore {
+  display: grid;
+  grid-template: 1.2fr 0.3fr repeat(3, 0.6fr) / 1fr;
+  grid-row-gap: 1em;
+  width: 320px;
+  max-width: calc(100% - 100px);
+  height: 55vh;
+  max-height: 65vh;
+  position: fixed;
+  bottom: 20%;
+  right: 5%;
+  background-color: var(--bg-white);
+  border-radius: 7px;
+  padding-bottom: 1em;
+  box-shadow: var(--shadow);
+  -webkit-box-shadow: var(--shadow);
+  visibility: hidden;
+  will-change: transform, visibility, opacity;
+  transform: translate(0, 50px);
+  transition: 0.35s ease-in all;
+}
+
+.icona-whatsapp {
+  fill: #fff;
+  width: 50px;
+  height: 50px;
+  background-color: #4dc247;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px #000;
+}
+
+.contenitore > div:not(._heading_green, .headings) {
+  display: grid;
+  place-content: space-around center;
+  place-items: center;
+}
+
+._heading_green {
+  display: grid;
+  place-content: center center;
+  place-items: stretch;
+  align-content: stretch;
+  align-items: center;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  gap: 0;
+  background-color: var(--bg-heading-green);
+  border-radius: 7px 7px 0 0/7px 7px 0 0;
+  color: var(--font-white);
+}
+
+.heading_green ._wa_icon {
+  grid-area: 1/1/3/2;
+}
+
+._heading_green h4 {
+  grid-area: 1/2/2/4;
+}
+
+._heading_green p {
+  grid-area: 2/2/3/4;
+}
+
+._heading_green,
+._reply_timing {
+  letter-spacing: 0.3px;
+}
+
+.bolder {
+  font-weight: 900;
+}
+
+._font_11px {
+  font-size: var(--font-size-11px);
+}
+
+._font_11px.bit_bigger {
+  font-size: var(--font-size-bit-bigger);
+}
+
+address ._font_11px {
+  color: var(--base-grey-darker);
+}
+
+[class^="user"] {
+  margin-inline: 1rem;
+  width: auto;
+  background-color: var(--bg-white);
+  border-left: 2px solid var(--bg-heading-green);
+  background: var(--base-grey);
+  border-radius: 2px 4px 2px 4px;
+  opacity: 0;
+  transform: translatey(-20px);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  will-change: transform, opacity;
+  transition: 0.4s all ease;
+  overflow: hidden;
+}
+
+[class^="user"]:is(:hover, :active, :focus) {
+  background: var(--bg-white);
+  box-shadow: 0 8px 5px -5px var(--base-grey), 0 7px 15px 1px var(--base-grey);
+}
+
+._call_this_avatar {
+  display: grid;
+  grid-template: 1fr/1fr calc(60% - -5vw) 0.5fr;
+  place-content: center center;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+._avatar {
+  -webkit-clip-path: circle(40%at 50% 50%);
+          clip-path: circle(40%at 50% 50%);
+}
+
+._avatar * {
+  width: 60px;
+  height: 60px;
+  -webkit-appearance: 1/1;
+     -moz-appearance: 1/1;
+          appearance: 1/1;
+  border-radius: 50%;
+}
+
+._contact_details {
+  width: 100px;
+  max-width: 100px;
+}
+
+._contact_name {
+  color: var(--base-grey-darker);
+  font: 100 14px/1em sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+._wa_icon,
+.headings {
+  display: grid;
+  width: 100%;
+}
+
+._wa_icon {
+  height: 100%;
+  min-width: 20px;
+  justify-content: end;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-items: end;
+}
+
+._wa_icon.custom_wa {
+  transform: scale(2);
+  top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  filter: grayscale(1) brightness(2);
+}
+
+._wa_icon svg {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  max-width: 2rem;
+  place-content: center;
+}
+
+.headings {
+  place-items: center center;
+  place-content: center center;
+  height: 100vh;
+  z-index: -2;
+  pointer-events: none;
+}
+
+._font_color_v1 {
+  font-family: "Bungee Spice", cursive;
+  font-size: calc(var(--font-size-bit-bigger) * 7);
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+._font_color_v2 {
+  font-family: "Nabla", cursive;
+  font-size: calc(var(--font-size-bit-bigger) * 8);
+  transition: 0.5s all 0.2s ease-in-out;
+  will-change: font-size, transform;
+}
+
+:where(._font_color_v1, ._font_color_v2) * {
+  display: inline;
+  white-space: nowrap;
+}
